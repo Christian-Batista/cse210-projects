@@ -23,6 +23,7 @@ class Program
         video3.AddComment(new Comment("User 7", "Great video!"));
         video3.AddComment(new Comment("User 8", "Informative video"));
         video3.AddComment(new Comment("User 9", "Helpful video"));
+        video3.AddComment(new Comment("User 19", "I loved it!"));
 
         // Put the videos into a list
         List<Video> videos = new List<Video>();
