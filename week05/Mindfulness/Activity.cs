@@ -48,5 +48,19 @@ public abstract class Activity
         Console.WriteLine();
     }
 
+    public void ShowProgressBar(int seconds)
+    {
+        Console.Write("[");
+        int width = 20;
+        for (int i = 0; i < width; i++)
+        {
+            double percentage = (i + 1) / (double)width * 100;
+            Console.Write($"={Math.Round(percentage)}%");
+            Console.SetCursorPosition(Console.CursorLeft - 3, Console.CursorTop);
+            Thread.Sleep(seconds * 1000 / width);
+        }
+        Console.WriteLine("] Done");
+    }
+
     public abstract void Run();
 }

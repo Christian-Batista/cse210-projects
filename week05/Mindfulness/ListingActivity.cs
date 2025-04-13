@@ -22,7 +22,7 @@ public class ListingActivity : Activity
         
         GetRandomPrompt();
         Console.WriteLine("You will begin shortly...");
-        ShowCountDown(5);
+        ShowProgressBar(5);
         
         List<string> items = GetListFromUser();
         _count = items.Count;

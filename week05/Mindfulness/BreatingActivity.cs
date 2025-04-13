@@ -10,6 +10,9 @@ public class BreathingActivity : Activity
     {
         DisplayStartingMessage();
         
+        Console.WriteLine("Starting breathing exercise...");
+        ShowProgressBar(2);
+        
         DateTime endTime = DateTime.Now.AddSeconds(_duration);
         while (DateTime.Now < endTime)
         {
